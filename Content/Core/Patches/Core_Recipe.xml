@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/RecipeDef[defName="SmeltOrDestroyThing"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <rewards>
+          <li>
+            <proficiency>PrinciplesMetalworking</proficiency>
+            <experienceType>Both</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+        </rewards>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+</Patch>

@@ -1,0 +1,2964 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--clean the leftover methods from recipes, such as installing and removing items, from this item declaration file-->
+<Patch>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RemoveJoywire"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">NeuroSurgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="SimpleProstheticFoot"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Machining</li>
+          <li>RoboticsAssembly</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="SimpleProstheticFinger"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Machining</li>
+          <li>RoboticsAssembly</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="SimpleProstheticToe"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Machining</li>
+          <li>RoboticsAssembly</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="PowerArm"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicComplexC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="AdvancedPowerArm"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicComplexC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="AdvancedBionicEye"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicComplexBrainC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="AdvancedBionicArm"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicComplexC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="AdvancedBionicLeg"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicComplexC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="AdvancedBionicSpine"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicComplexBrainC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallAdvancedBionicSpine"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">BrainWiring</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="AdvancedBionicEar"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicComplexBrainC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallAdvancedBionicEar"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">BionicsInstall</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="AdvancedBionicHand"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicComplexC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallAdvancedBionicHand"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">BionicsInstall</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="AdvancedBionicFoot"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicComplexC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallAdvancedBionicFoot"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">BionicsInstall</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="AdvancedBionicFinger"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicComplexC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallAdvancedBionicFinger"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">BionicsInstall</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="AdvancedBionicToe"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicComplexC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallAdvancedBionicToe"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">BionicsInstall</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="AdvancedBionicJaw"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicComplexC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallAdvancedBionicJaw"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">BionicsInstall</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallExoskeletonSuit"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">BionicsInstall</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RemoveExoskeletonSuit"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="EPIA_RemoveProtectiveExoskeleton"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallBionicHand"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">BionicsInstall</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallBionicFoot"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">BionicsInstall</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallBionicFinger"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">BionicsInstall</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallBionicToe"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">BionicsInstall</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallSilentJaw"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">BionicsInstall</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="MedicalRib"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicSimpleC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallMedicalRib"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RemoveMedicalRib"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="DruggedRib"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicSimpleC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallDruggedRib"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RemoveDruggedRib"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="AdrenalineRib"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicSimpleC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallAdrenalineRib"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RemoveAdrenalineRib"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="PainkillerRib"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicSimpleC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallPainkillerRib"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RemovePainkillerRib"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="HeatingRib"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicSimpleC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallHeaterRib"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RemoveHeaterRib"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="CoolingRib"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicSimpleC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallCoolerRib"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RemoveCoolerRib"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="CoagulatorRib"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicSimpleC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallCoagulatorRib"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RemoveCoagulatorRib"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RespirationRib"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicSimpleC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallRespirationRib"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RemoveRespirationRib"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="WakeUpRib"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicSimpleC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallWakeUpRib"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RemoveWakeUpRib"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallTacticalCorneaImplant"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">BionicsOrganInstall</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RemoveTacticalCorneaImplant"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallConstructorCore"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">BrainWiring</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RemoveConstructorCore"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">NeuroSurgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallFarmerCore"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">BrainWiring</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RemoveFarmerCore"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">NeuroSurgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallMinerCore"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">BrainWiring</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RemoveMinerCore"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">NeuroSurgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallDoctorCore"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">BrainWiring</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RemoveDoctorCore"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">NeuroSurgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallDiplomatCore"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">BrainWiring</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RemoveDiplomatCore"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">NeuroSurgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="EPIA_InstallAuxiliaryAI_Artisan"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">BrainWiring</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="EPIA_RemoveAuxiliaryAI_Artisan"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">NeuroSurgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="EPIA_RemoveAuxiliaryAI_Sharpshooter"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">NeuroSurgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="EPIA_InstallAuxiliaryAI_Commando"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">BrainWiring</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="EPIA_RemoveAuxiliaryAI_Commando"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">NeuroSurgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="EPIA_InstallAuxiliaryAI_Brawler"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">BrainWiring</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="EPIA_RemoveAuxiliaryAI_Brawler"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">NeuroSurgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallAIPersonaCore"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">BrainWiring</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="EPIA_InstallTacticalBionicEye"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">BionicsOrganInstall</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="EPOE_OrganicOptimizing"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="EPIA_OrganicOptimizing_Organ"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="EPOE_InstinctOptimizingEyes"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="EPOE_InstinctOptimizingHands"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="EPOE_InstinctOptimizingFoot"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="EPIA_RepairScar"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="SurgeryRemoveFrailty"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="SurgeryRemoveBadBack"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="EPIA_SurgeryRemoveChemicalDamageModerate"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="EPIA_SurgeryRemoveChemicalDamageSevere"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="EPOE_SurgeryRemoveDementia"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">NeuroSurgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="EPOE_SurgeryRemoveAlzheimers"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">NeuroSurgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="EPIA_RepairBrainScar"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">NeuroSurgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="EPIA_SurgeryBrainRemoveChemicalDamageModerate"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">NeuroSurgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="EPIA_SurgeryBrainRemoveChemicalDamageSevere"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">NeuroSurgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="EPIA_RestoreBones"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallLightReceptor"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">BionicsInstall</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallSimpleSpine"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">BrainWiring</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallHydraulicJaw"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallScytherBlade"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="EPIA_RemoveScytherBlade"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallSurrogateLung"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">OrganTransplant</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallSurrogateStomach"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">OrganTransplant</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallSurrogateLiver"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">OrganTransplant</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallSurrogateKidney"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">OrganTransplant</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallBrainStimulator"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">BrainWiring</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RemoveBrainStimulator"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">NeuroSurgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallSyntheticLung"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">OrganTransplant</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallSyntheticLiver"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">OrganTransplant</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallSyntheticKidney"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">OrganTransplant</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallMuscleStimulatorArms"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallMuscleStimulatorLegs"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="AIChip"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicComplexBrainC3</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallAIChip"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">BrainWiring</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RemoveAIChip"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">NeuroSurgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallNaturalEye"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallNaturalNose"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallNaturalEar"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallNaturalJaw"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallNaturalStomach"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">OrganTransplant</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallNaturalArm"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="InstallNaturalLeg"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="BionicEye"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicComplexBrainC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="BionicLeg"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicComplexC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="BionicArm"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicComplexC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="BionicSpine"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicComplexBrainC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="BionicEar"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicComplexBrainC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="BionicHand"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicComplexC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="BionicFoot"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicComplexC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="BionicFinger"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicComplexC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="BionicToe"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicComplexC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="BionicJaw"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicComplexC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="SilentJaw"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicComplexC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="SyntheticHeart"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicComplexBrainC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="SyntheticLung"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicComplexBrainC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="SyntheticStomach"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicComplexC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="SyntheticLiver"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicComplexBrainC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="SyntheticKidney"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicComplexC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="EPIA_ScrapProsthesis"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>MechanicalAssembly</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.7</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Make_EPOE_MAAI_Chip_UseAICore"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>BionicComplexBrainC3</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RemoveDeathAcidifier"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>MedicalOperationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+            <li>
+              <stat>MedicalSurgerySuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+</Patch>

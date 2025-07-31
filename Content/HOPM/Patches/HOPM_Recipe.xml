@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/RecipeDef[defName="AutopsyBasic"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <rewards>
+          <li>
+            <proficiency MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</proficiency>
+            <experienceType>Both</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+          <li>
+            <proficiency>Anatomy</proficiency>
+            <experienceType>Both</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+        </rewards>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/RecipeDef[defName="AutopsyAdvanced"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+        </requirements>
+        <rewards>
+          <li>
+            <proficiency MayRequire="ghostdata.lifelessons.medicalmishaps">OrganTransplant</proficiency>
+            <experienceType>Both</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+        </rewards>
+        <hardRequirement>True</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/RecipeDef[defName="AutopsyGlitterworld"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li MayRequire="ghostdata.lifelessons.medicalmishaps">OrganTransplant</li>
+        </requirements>
+        <rewards>
+          <li>
+            <proficiency MayRequire="ghostdata.lifelessons.medicalmishaps">BionicsOrganInstall</proficiency>
+            <experienceType>Both</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+        </rewards>
+        <hardRequirement>True</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+</Patch>

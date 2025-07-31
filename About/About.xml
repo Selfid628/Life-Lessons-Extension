@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Life Lessons Extension</name>
+    <author>Selfid628</author>
+    <packageId>selfid628.LifeLessonsExtension</packageId>
+    <url>https://github.com/Selfid628/Life-Lessons-Extension</url>
+    <description>Removes the unmasteredGlobalStatModifiers (including the 150% pain multiplier) from the Anesthesia
+        proficiency, fixing the pain stacking bug. Adds missing patches to some mods I use. Defines recipes to create LL
+        textbooks. Adds support for vampire xenotypes from 'Big and Small - Vampires and the Undead'
+        to the 'Become a Sanguophage' aspiration from 'Vanilla Aspirations Expanded'.
+    </description>
+    <supportedVersions>
+        <li>1.5</li>
+    </supportedVersions>
+    <modDependencies>
+        <li>
+            <packageId>ghostdata.lifelessons</packageId>
+            <displayName>Life Lessons</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2920678419</steamWorkshopUrl>
+        </li>
+        <li>
+            <packageId>ghostdata.lifelessons.medicalmishaps</packageId>
+            <displayName>Life Lessons: Medical Mishaps</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/3234804958</steamWorkshopUrl>
+        </li>
+    </modDependencies>
+    <loadAfter>
+        <li>ghostdata.lifelessons</li>
+        <li>ghostdata.lifelessons.medicalmishaps</li>
+        <li>yyyyy.lifelessonseverythingpatch</li>
+        <li>RedMattis.Undead</li>
+        <li>VanillaExpanded.VanillaAspirationsExpanded</li>
+        <li>VanillaExpanded.GABA</li>
+        <li>vat.epoeforked</li>
+        <li>OskarPotocki.VFE.Medieval2</li>
+        <li>Smuffle.HarvestOrgansPostMortem</li>
+        <li>leafzxg.MasterOfCrafting</li>
+        <li>ElSov.Highborn</li>
+    </loadAfter>
+</ModMetaData> 

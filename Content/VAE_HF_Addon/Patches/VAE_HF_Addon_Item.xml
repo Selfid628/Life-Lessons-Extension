@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Footwear_FlakBoots"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>PolymerTailoring</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.7</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Poor</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Footwear_TrooperBoots"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>PowerArmorC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Footwear_ReconBoots"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>PowerArmorC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Footwear_CataphractBoots"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>PowerArmorC2</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Footwear_UraniumCataphractBoots"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>PowerArmorC2</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VAE_Handwear_MarineGloves"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>PowerArmorC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Handwear_FlakGloves"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>PolymerTailoring</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.7</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Poor</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Handwear_TrooperGloves"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>PowerArmorC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Handwear_ReconGloves"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>PowerArmorC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Handwear_CataphractGloves"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>PowerArmorC2</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Handwear_EnergyCataphractGloves"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>PowerArmorC2</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+</Patch>

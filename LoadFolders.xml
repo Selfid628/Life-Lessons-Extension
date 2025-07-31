@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<loadFolders>
+  <v1.5>
+    <li>/</li>
+    <li>Content</li>
+    <li>Content/Core</li>
+    <li>Content/LifeLessons</li>
+    <li IfModActive="yyyyy.lifelessonseverythingpatch">Content/LifeLessonsEverythingPatch</li>
+    <li IfModActive="VanillaExpanded.VanillaAspirationsExpanded">Content/VanillaAspirationsExpanded</li>
+    <li IfModActive="VanillaExpanded.GABA">Content/VAE_HF_Addon</li>
+    <li IfModActive="vat.epoeforked">Content/EPOE</li>
+    <li IfModActive="OskarPotocki.VFE.Medieval2">Content/VFEM2</li>
+    <li IfModActive="Smuffle.HarvestOrgansPostMortem">Content/HOPM</li>
+    <li IfModActive="leafzxg.MasterOfCrafting">Content/MOC</li>
+    <li IfModActive="ElSov.Highborn">Content/HighbornXenotype</li>
+  </v1.5>
+</loadFolders>

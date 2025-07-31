@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--continue the patching for all the methods-->
+<Patch>
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/RecipeDef[defName="Extract3MetalFromSlag"]</xpath>
+        <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <rewards>
+                    <li>
+                        <proficiency>PrinciplesMetalworking</proficiency>
+                        <experienceType>Both</experienceType>
+                        <progressGain>0</progressGain>
+                        <progressMultiplier>1.5</progressMultiplier>
+                    </li>
+                </rewards>
+                <hardRequirement>False</hardRequirement>
+            </li>
+        </value>
+    </Operation>
+</Patch>

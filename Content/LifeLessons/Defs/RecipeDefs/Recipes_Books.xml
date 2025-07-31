@@ -1,0 +1,901 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- Base recipe for writing textbooks -->
+    <RecipeDef Name="WritingTextbooksBase" Abstract="True">
+        <label>write textbook</label>
+        <description>Write a textbook.</description>
+        <jobString>Write a textbook.</jobString>
+        <workSpeedStat>ResearchSpeed</workSpeedStat>
+        <workSkill>Intellectual</workSkill>
+        <effectWorking>Sculpt</effectWorking>
+        <soundWorking>Recipe_Write</soundWorking>
+        <workAmount>334000</workAmount>
+        <unfinishedThingDef>VBE_UnfinishedBook</unfinishedThingDef>
+        <recipeUsers>
+            <li>VBE_WritersTable</li>
+            <li>VBE_TypewritersTable</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Leathers</li>
+                    </categories>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Cloth</li>
+                    </thingDefs>
+                </filter>
+                <count>75</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Cloth</li>
+            </thingDefs>
+            <categories>
+                <li>Leathers</li>
+            </categories>
+        </fixedIngredientFilter>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_BeginnerMath</defName>
+        <label>write textbook (mathematics)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_BeginnerMath>1</LLTextbook_BeginnerMath>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>SimpleMathematics</li>
+                    <li>Algebra</li>
+                    <li>Geometry</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_Calculus</defName>
+        <label>write textbook (calculus)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_Calculus>1</LLTextbook_Calculus>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>Calculus</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_DiscreteMath</defName>
+        <label>write textbook (discrete math)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_DiscreteMath>1</LLTextbook_DiscreteMath>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>DiscreteMathematics</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_DifferentialEquations</defName>
+        <label>write textbook (differential equations)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_DifferentialEquations>1</LLTextbook_DifferentialEquations>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>DifferentialEquations</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_ExoticMath</defName>
+        <label>write textbook (exotic math)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_ExoticMath>1</LLTextbook_ExoticMath>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>ExoticMath</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_BasicPhysics</defName>
+        <label>write textbook (basic physics)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_BasicPhysics>1</LLTextbook_BasicPhysics>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>FoundationPhysics</li>
+                    <li>MaterialsPhysics</li>
+                    <li>PhysicsMechanics</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_Mechanics</defName>
+        <label>write textbook (mechanics)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_Mechanics>1</LLTextbook_Mechanics>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>Thermodynamics</li>
+                    <li>Fluiddynamics</li>
+                    <li>Electrodynamics</li>
+                    <li>PhysicsMechanics</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_Photonics</defName>
+        <label>write textbook (photonics)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_Photonics>1</LLTextbook_Photonics>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>ParticlePhysics</li>
+                    <li>SimplePhotonics</li>
+                    <li>AdvancedPhotonics</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_AdvancedPhysics</defName>
+        <label>write textbook (nuclear physics)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_AdvancedPhysics>1</LLTextbook_AdvancedPhysics>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>NuclearPhysics</li>
+                    <li>ParticlePhysics</li>
+                    <li>QuantumPhysics</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_ExoticPhysics</defName>
+        <label>write textbook (exotic physics)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_ExoticPhysics>1</LLTextbook_ExoticPhysics>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>ExoticPhysics</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_Programming</defName>
+        <label>write textbook (programming)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_Programming>1</LLTextbook_Programming>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>Programming</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_ArtificialIntelligence</defName>
+        <label>write textbook (artificial intelligence)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_ArtificialIntelligence>1</LLTextbook_ArtificialIntelligence>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>ArtificialIntelligence</li>
+                    <li>AdaptiveIntelligence</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_Chemistry</defName>
+        <label>write textbook (chemistry)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_Chemistry>1</LLTextbook_Chemistry>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>FoundationChemistry</li>
+                    <li>PhysicalChemistry</li>
+                    <li>OrganicChemistry</li>
+                    <li>InorganicChemistry</li>
+                    <li>ChemicalSynthesis</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_Biochemistry</defName>
+        <label>write textbook (biochemistry)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_Biochemistry>1</LLTextbook_Biochemistry>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>Biochemistry</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_Pharmacology</defName>
+        <label>write textbook (pharmacology)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_Pharmacology>1</LLTextbook_Pharmacology>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>Biochemistry</li>
+                    <li>ChemicalSynthesis</li>
+                    <li>Pharmacology</li>
+                    <li>MedicineCompounding</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_Biology</defName>
+        <label>write textbook (biology)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_Biology>1</LLTextbook_Biology>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>FoundationsBiology</li>
+                    <li>Anatomy</li>
+                    <li>MicroBiology</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_MolecularBiology</defName>
+        <label>write textbook (microbiology)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_MolecularBiology>1</LLTextbook_MolecularBiology>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>MicroBiology</li>
+                    <li>MolecularBiology</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_Mycology</defName>
+        <label>write textbook (mycology)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_Mycology>1</LLTextbook_Mycology>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>MicroBiology</li>
+                    <li>Mycology</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_Phytology</defName>
+        <label>write textbook (phytology)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_Phytology>1</LLTextbook_Phytology>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>Phytology</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_Entomology</defName>
+        <label>write textbook (entomology)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_Entomology>1</LLTextbook_Entomology>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>Entomology</li>
+                    <li>Anatomy</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_Genetics</defName>
+        <label>write textbook (genetics)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_Genetics>1</LLTextbook_Genetics>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>Genetics</li>
+                    <li>MolecularBiology</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_Bioengineering</defName>
+        <label>write textbook (bioengineering)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_Bioengineering>1</LLTextbook_Bioengineering>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>Genetics</li>
+                    <li>Bioengineering</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_Neurology</defName>
+        <label>write textbook (neurology)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_Neurology>1</LLTextbook_Neurology>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>Neurology</li>
+                    <li>Anatomy</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_Psychology</defName>
+        <label>write textbook (psychology)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_Psychology>1</LLTextbook_Psychology>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>Psychology</li>
+                    <li>Anatomy</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_Biotechnology</defName>
+        <label>write textbook (biotechnology)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_Biotechnology>1</LLTextbook_Biotechnology>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>Biotechnology</li>
+                    <li>NeuralInterfacing</li>
+                    <li>Neurology</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_Nanotechnology</defName>
+        <label>write textbook (nanomechanics)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_Nanotechnology>1</LLTextbook_Nanotechnology>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>Biotechnology</li>
+                    <li>Microbionics</li>
+                    <li>NanomechanicalEngineering</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_Astronomy</defName>
+        <label>write textbook (astronomy)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_Astronomy>1</LLTextbook_Astronomy>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>FoundationsAstronomy</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_Astrophysics</defName>
+        <label>write textbook (astrophysics)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_Astrophysics>1</LLTextbook_Astrophysics>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>Astrophysics</li>
+                    <li>PhysicsMechanics</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_Astrobiology</defName>
+        <label>write textbook (astrobiology)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_Astrobiology>1</LLTextbook_Astrobiology>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>Astrobiology</li>
+                    <li>Biochemistry</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_Astrometry</defName>
+        <label>write textbook (astrometry)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_Astrometry>1</LLTextbook_Astrometry>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>Astrometry</li>
+                    <li>Astrophysics</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_Geology</defName>
+        <label>write textbook (geology)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_Geology>1</LLTextbook_Geology>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>FoundationsGeology</li>
+                    <li>Petrology</li>
+                    <li>Mineralogy</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_Geophysics</defName>
+        <label>write textbook (geophysics)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_Geophysics>1</LLTextbook_Geophysics>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>Geophysics</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_Hydrogeology</defName>
+        <label>write textbook (hydrogeology)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_Hydrogeology>1</LLTextbook_Hydrogeology>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>Geophysics</li>
+                    <li>Fluiddynamics</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_ElectricalEngineering</defName>
+        <label>write textbook (electrical engineering)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_ElectricalEngineering>1</LLTextbook_ElectricalEngineering>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>ElectricalEngineering</li>
+                    <li>Electronics</li>
+                    <li>ElectricalAssembly</li>
+                    <li>MicroelectronicsAssembly</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_MechanicalEngineering</defName>
+        <label>write textbook (mechanical engineering)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_MechanicalEngineering>1</LLTextbook_MechanicalEngineering>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>MechanicalEngineering</li>
+                    <li>MechanicalAssembly</li>
+                    <li>FineMechanicsAssembly</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_BasicMechanicAssembly</defName>
+        <label>write textbook (car repair)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_BasicMechanicAssembly>1</LLTextbook_BasicMechanicAssembly>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>Engines</li>
+                    <li>MechanicalAssembly</li>
+                    <li>ElectricalAssembly</li>
+                    <li>Welding</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_AerospaceEngineering</defName>
+        <label>write textbook (aerospace engineering)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_AerospaceEngineering>1</LLTextbook_AerospaceEngineering>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>Engines</li>
+                    <li>AerospaceEngineering</li>
+                    <li>PressurizedSystems</li>
+                    <li>AirframeEngineering</li>
+                    <li>SpaceHulls</li>
+                    <li>ExoticsWelding</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_Robotics</defName>
+        <label>write textbook (robotics)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_Robotics>1</LLTextbook_Robotics>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>RoboticsAssembly</li>
+                    <li>PressurizedSystems</li>
+                    <li>FineMechanicsAssembly</li>
+                    <li>MicroelectronicsAssembly</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_PowerArmor</defName>
+        <label>write textbook (power armor design)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_PowerArmor>1</LLTextbook_PowerArmor>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>RoboticsAssembly</li>
+                    <li>IntegratedSystems</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_BionicsAssembly</defName>
+        <label>write textbook (bionics)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_BionicsAssembly>1</LLTextbook_BionicsAssembly>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>RoboticsAssembly</li>
+                    <li>NeuralInterfacing</li>
+                    <li>BionicsAssembly</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_Metalworking</defName>
+        <label>write textbook (modern metalworking)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_Metalworking>1</LLTextbook_Metalworking>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>PrinciplesMetalworking</li>
+                    <li>MetalWorking</li>
+                    <li>Welding</li>
+                    <li>ExoticsWelding</li>
+                    <li>ExoticsSmithing</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_Smithing</defName>
+        <label>write textbook (ancient smithing)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_Smithing>1</LLTextbook_Smithing>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>PrinciplesMetalworking</li>
+                    <li>Blacksmithing</li>
+                    <li>Bladesmithing</li>
+                    <li>Armorsmithing</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_Gunsmithing</defName>
+        <label>write textbook (gunsmithing)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_Gunsmithing>1</LLTextbook_Gunsmithing>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>PrimitiveGunsmithing</li>
+                    <li>Gunsmithing</li>
+                    <li>Machining</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_Woodworking</defName>
+        <label>write textbook (carpentry)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_Woodworking>1</LLTextbook_Woodworking>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>Carving</li>
+                    <li>PrinciplesWoodworking</li>
+                    <li>Carpentry</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_Stoneworking</defName>
+        <label>write textbook (masonry)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_Stoneworking>1</LLTextbook_Stoneworking>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>Carving</li>
+                    <li>PrinciplesStoneworking</li>
+                    <li>Masonry</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="WritingTextbooksBase">
+        <defName>WritingTextbook_Sculpting</defName>
+        <label>write textbook (sculpting arts)</label>
+        <workAmount>216000</workAmount>
+        <products>
+            <LLTextbook_Sculpting>1</LLTextbook_Sculpting>
+        </products>
+        <modExtensions>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li>Carving</li>
+                    <li>PrinciplesStoneworking</li>
+                    <li>PrinciplesWoodworking</li>
+                    <li>Welding</li>
+                    <li>Glassblowing</li>
+                    <li>ReadingWriting</li>
+                </requirements>
+                <hardRequirement>True</hardRequirement>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+</Defs> 

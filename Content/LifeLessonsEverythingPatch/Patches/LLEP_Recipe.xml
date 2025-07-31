@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/RecipeDef[defName="SurgicalInspection"]</xpath>
+        <value>
+            <li Class="LifeLessons.BillProficiencyExtension">
+                <requirements>
+                    <li MayRequire="ghostdata.lifelessons.medicalmishaps">Surgery</li>
+                </requirements>
+                <unqualifiedPenalty>
+                    <statModifiers>
+                        <li>
+                            <stat>MedicalSurgerySuccessChance</stat>
+                            <applyGlobally>True</applyGlobally>
+                            <modifier>0.7</modifier>
+                        </li>
+                        <li>
+                            <stat>SurgerySuccessChanceFactor</stat>
+                            <applyGlobally>True</applyGlobally>
+                            <modifier>0.7</modifier>
+                        </li>
+                    </statModifiers>
+                    <qualityCap>Legendary</qualityCap>
+                </unqualifiedPenalty>
+                <hardRequirement>False</hardRequirement>
+            </li>
+        </value>
+    </Operation>
+</Patch>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/VAspirE.AspirationDef[defName="VAspirE_BecomeSanguophage"]/satisfiedXenotypesAny</xpath>
+        <value>
+            <li MayRequire="RedMattis.Undead">VU_Nosferatu</li>
+            <li MayRequire="RedMattis.Undead">VU_WhiteRose</li>
+            <li MayRequire="RedMattis.Undead">VU_Dracul_Feral</li>
+            <li MayRequire="RedMattis.Undead">VU_Dracul_Spawn</li>
+            <li MayRequire="RedMattis.Undead">VU_Dracul</li>
+            <li MayRequire="RedMattis.Undead">VU_Dracul_Mature</li>
+            <li MayRequire="RedMattis.Undead">VU_Dracul</li>
+            <li MayRequire="RedMattis.Undead">VU_Dracul_Progenitor</li>
+            <li MayRequire="RedMattis.Undead">VU_Dracul_HalfVampire</li>
+        </value>
+    </Operation>
+</Patch>
