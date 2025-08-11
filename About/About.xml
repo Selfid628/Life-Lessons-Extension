@@ -4,10 +4,10 @@
     <author>Selfid628</author>
     <packageId>selfid628.LifeLessonsExtension</packageId>
     <url>https://github.com/Selfid628/Life-Lessons-Extension</url>
-    <description>Removes the unmasteredGlobalStatModifiers (including the 150% pain multiplier) from the Anesthesia
-        proficiency, fixing the pain stacking bug. Adds missing patches to some mods I use. Defines recipes to create LL
-        textbooks. Adds support for vampire xenotypes from 'Big and Small - Vampires and the Undead'
-        to the 'Become a Sanguophage' aspiration from 'Vanilla Aspirations Expanded'.
+    <description>Removes the unmasteredGlobalStatModifiers (including the 150% pain multiplier) from the Anesthesia proficiency, fixing the pain stacking bug.
+        Adds missing LL patches to some mods I use.
+        Defines recipes to create LL textbooks.
+        Adds support for vampire xenotypes from 'Big and Small - Vampires and the Undead' to the 'Become a Sanguophage' aspiration from 'Vanilla Aspirations Expanded'.
     </description>
     <supportedVersions>
         <li>1.5</li>
